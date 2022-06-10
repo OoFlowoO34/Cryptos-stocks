@@ -1,0 +1,485 @@
+*, html {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color:#fcfcfc;
+}
+
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+    ;
+}
+
+
+/*Typographie*/
+body{
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3;
+    color: black;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 24px;
+    font-weight: 600;
+    color:black;
+}
+
+#description{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.3;
+    color: white;
+}
+
+#menu > a{
+    font-size: 2em;
+    line-height: 0;
+}
+
+/*Mise en page*/
+
+
+
+.headerhome{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: -moz-linear-gradient(top,  rgba(196,196,196,1) 0%, rgba(196,196,196,0) 100%);
+    background: -webkit-linear-gradient(top,  rgba(196,196,196,1) 0%,rgba(196,196,196,0) 100%);
+    background: linear-gradient(to bottom,  rgba(196,196,196,1) 0%,rgba(196,196,196,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4c4c4', endColorstr='#00c4c4c4',GradientType=0 );
+}
+.headerhome > :last-child{
+    align-self: flex-end;
+    
+}
+
+.headerhome > :last-child img{
+    height: 150px;
+} 
+
+
+
+/*---------------------------------------- HOME -----------------------------------------------------*/
+
+#img_header_right{
+    display: none;
+}
+#photoprofile img{
+    width : 100px;
+    height : 100px;
+}
+#sociallink1{
+    padding-right: 50px;
+    padding-bottom: 0px;
+}
+#sociallink2{
+    padding-right: 50px;
+    padding-bottom: 25px; 
+}
+
+#sociallink1 img,
+#sociallink2 img
+{
+    top: 5px;
+    position: relative;
+}
+
+#main{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil{
+    width: 100%;
+    position: relative;
+    top: -75px;
+}
+
+.marge{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#socials{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#cv{
+    list-style: inside;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+#cv li{
+    margin-right: 25px;
+}
+
+#description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    background-color: #F8A239;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+#description > div img{
+    display: none;
+}
+
+#description > :last-child{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#menu > a{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    width: 40%;
+
+}
+
+#zonebourse{
+    margin-right: 5%;
+}
+#zonebourse > a{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#zonebourse > a > img{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+}
+
+#twitter{
+    width: 80%;
+}
+
+
+footer div ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+    align-items: center;
+    font-size: 12px;
+}
+footer div ul li{
+    padding-bottom: 10px;
+}
+
+/*--------------------------------------- BOURSE CRYPTO ---------------------------------------------*/
+
+.bodycenter{
+    margin-left:auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+
+
+
+.headerboursecrypto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.headerboursecrypto > h1{
+    padding-left: 25px;
+}
+
+#portefeuille{
+    background-color:white;
+}
+#portefeuille,
+.has-sub1,.has-sub2{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+#portefeuille > div {
+    padding: 25px;
+}
+#portefeuille > div > :first-child{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#portefeuille > div > :first-child h2{
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 16px;
+}
+#portefeuille > div > :first-child h2 span{
+    
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#chart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    height: 25px;
+    border-radius: 10px;
+}
+
+
+
+#color_symbole0{
+    background-color:#F89D30;
+}
+#color_symbole1{
+    background-color:#5057FF;
+}
+.color_symbole2{
+    background-color:#FF4646;
+}
+.color_symbole3{
+    background-color:#52B05C;
+}
+.color_symbole4{
+    background-color:#C4C4C4;
+}
+
+#chart > :first-child {
+    border-radius: 10px 0px 0px 10px ;
+}
+#chart > :last-child {
+    border-radius: 0px 10px 10px 0px ;
+}
+
+#symbole1{
+    height: 100%;
+    width: 40%;
+    border-radius: 10px 0px 0px 10px ;
+}
+#symbole2{
+    height: 100%;
+    width: 30%;
+}
+#symbole3{
+    height: 100%;
+    width: 15%;
+}
+#symbole4{
+    height: 100%;
+    width: 10%;
+}
+#symbole5{
+    height: 100%;
+    width: 5%;
+    border-radius: 0px 10px 10px 0px ;
+}
+
+
+
+#symbolelist{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+#symbolelist > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.symbole h3{
+    font-size: 14px;
+    font-weight:400;
+    padding-left: 5px;
+}
+.symbole {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circlesymbole{
+    width: 14px;
+    height: 14px;
+    border-radius: 300px;
+    margin-right: 5px;
+}
+
+
+#articles > :first-child{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+#articles > :first-child img{
+    padding-right: 25px;
+}
+
+.separateur{
+    line-height: 1px;
+    
+    border: solid 1px;
+    width: 150px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+/* accordéon */
+
+#accordion > li{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-color:white;
+    }
+    #accordion > li img{
+        max-width: 100%;
+    }
+/*
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+
+input:checked + label .resume {
+    display: none;
+}
+*/
+
+.imagearticle{
+    text-align: center;
+}
+
+
+
+#accordion > li{
+    padding: 25px;
+}
+
+
+
+
+/*
+input:checked + label + .text{
+    height: auto;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    display: block;
+}
+*/
+.arrow{
+     text-align: right;
+ }
+#arrow:hover{
+    box-shadow: 4px 4px 20px rgba(20, 0, 0, 1);
+}
+
+ 
+@media screen and (min-width: 960px) {
+    #main{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    #img_header_right{
+        display: flex;
+    }
+    #accueil{
+        width: 80%;
+        position: relative;
+        top: -75px;
+    }
+    #socials{
+        display: flex;
+        flex-direction: row;       
+    }
+    #sociallink1,
+    #sociallink2{
+    padding-bottom: 25px;
+    }
+    
+    #description > div img{
+        display: flex;
+    }
+    #twitter{
+        width: 20%;
+    }
+    
+    footer div ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;  
+    }
+
+
+/* Bourse crypto */
+    .bodycenter{
+        margin-left:auto;
+        margin-right: auto;
+        width: 912px;
+    }
+}
