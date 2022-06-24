@@ -78,6 +78,7 @@ h1,h2,h3,h4,h5,h6 {
     display: none;
 }
 #photoprofile img{
+    border-radius: 100%;
     width : 100px;
     height : 100px;
 }
